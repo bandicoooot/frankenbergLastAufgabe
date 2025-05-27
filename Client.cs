@@ -24,7 +24,7 @@ public Client()
     {
         while (true)
         {
-            _view.DisplayInputElement(); // ✅ fixed spelling
+            _view.DisplayInputElement(); 
         }
     }
 }

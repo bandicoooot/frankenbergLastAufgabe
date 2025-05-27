@@ -1,6 +1,7 @@
 public class CustomerModel
 {
-    private string _name;
+    private string _name = "";
+
     public string Name
     {
         get => _name;

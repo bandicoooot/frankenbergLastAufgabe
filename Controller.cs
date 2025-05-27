@@ -13,10 +13,13 @@ public class Controller {
         set { _view = value; }
     }
 
-    public Controller() {
-        _model = new CustomerModel(); // fixed here
-        _view = new View(this);
-    }
+ public Controller() {
+    _model = new CustomerModel();
+    _view = new View(this);
+
+    _model.Name = "Karin Weber"; 
+}
+
 
     public void EditCustomer(string name) {
         model.Name = name;
