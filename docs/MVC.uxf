@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>6</y><w>260</w><h>80</h></coordinates><panel_attributes>Controller
+--
++model:CustomerModel
++view:View
+--
++EditCustomer(n:String):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>416</y><w>230</w><h>110</h></coordinates><panel_attributes>CustomerModel
+--
++name:String
++view:Observer
+--
+-Notify():void
++RegisterObserver(o:Observer):void
++UnregisterObserver(o:Observer):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>36</y><w>160</w><h>400</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;10;140;380</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>346</y><w>210</w><h>170</h></coordinates><panel_attributes>View
+--
++ctrl:Controller
++model:Model
+--
++DisplayInputElement():void
++DisplayOutputElement():void
++Update():void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>216</y><w>210</w><h>50</h></coordinates><panel_attributes>Observer
+--
+/+Update():void/
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>256</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>6</y><w>300</w><h>390</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>40;370;10;370;10;10;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>456</y><w>300</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>280;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>610</x><y>496</y><w>170</w><h>70</h></coordinates><panel_attributes>Updates OutputElement if 
+the Model has changed
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>436</y><w>230</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>210;70;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>0</x><y>396</y><w>220</w><h>70</h></coordinates><panel_attributes>Informs the controller, 
+if the user will changing
+model properties
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>406</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1090</x><y>476</y><w>170</w><h>70</h></coordinates><panel_attributes>Notifies all observers
+if an property was 
+changed by a User
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>476</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element></diagram>
